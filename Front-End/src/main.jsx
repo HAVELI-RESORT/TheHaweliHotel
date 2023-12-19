@@ -15,6 +15,10 @@ import Specialoffers from './Components/Specialoffers.jsx'
 import Gallerycomp from './Components/Gallerycomp.jsx'
 import Contact from './Components/Contact.jsx'
 import Bookingcomp from './Components/Bookingcomp.jsx'
+import TermsofService from './Components/TermsofService.jsx'
+import Support from './Components/support.jsx';
+import PrivacyPolicy from './Components/PrivacyPolicy.jsx'
+import CancellationRefundPolicy from './Components/CancellationRefundPolicy.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -58,6 +62,18 @@ const router = createBrowserRouter([
       },{
         path: "Bookingcomp",
         element: <Bookingcomp />
+      },{
+        path: "TermsofService",
+        element: <TermsofService />
+      },{
+        path: "support",
+        element: <Support />
+      },{
+        path: "PrivacyPolicy",
+        element: <PrivacyPolicy />
+      },{
+        path: "CancellationRefundPolicy",
+        element: <CancellationRefundPolicy />
       },
 
     ]

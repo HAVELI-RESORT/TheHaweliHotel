@@ -13,7 +13,7 @@ export default function Navbar() {
                     <div className="flex flex-row items-center justify-center space-x-4">
                         <div className="hidden space-x-4 sm:flex sm:flex-row sm:justify-center sm:items-center ">
                             <Link to="/about">
-                                <p className="hover:underline">ABOUT</p>
+                                <p className="hover:underline">ABOUT US</p>
                             </Link>
                             <Link to="/accommodation">
                                 <p className="hover:underline">ACCOMMODATION</p>

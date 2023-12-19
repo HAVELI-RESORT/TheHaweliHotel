@@ -19,9 +19,9 @@ export default function Footer() {
                             <h2 className="mb-3 text-xl font-semibold tracking-widest text-gray-900 title-font">HOME</h2>
                             <nav className="flex flex-col gap-1 mb-10 list-none ">
                                 <li><Link to="/about" className="text-gray-200 hover:text-gray-800">About</Link></li>
-                                <li><Link to="/reviews" className="text-gray-200 hover:text-gray-800">Google Reviews</Link></li>
-                                <li><Link to="/directions" className="text-gray-200 hover:text-gray-800">Get Directions</Link></li>
-                                <li><Link to="/views" className="text-gray-200 hover:text-gray-800">Nearby Views</Link></li>
+                                <li><Link to="https://www.google.com/maps/place/Dev+mandir/@24.6852455,84.3020486,14z/data=!4m10!1m2!2m1!1sDev+Temple!3m6!1s0x398cf985ebf77ecd:0x1e2d2e1480a5b1a1!8m2!3d24.6852455!4d84.3401574!15sCgpEZXYgVGVtcGxlkgEMaGluZHVfdGVtcGxl4AEA!16s%2Fg%2F11sx0dlbf_?hl=en&entry=ttu" className="text-gray-200 hover:text-gray-800">Google Reviews</Link></li>
+                                <li><Link to="https://www.google.com/maps/place/Dev+mandir/@24.6852455,84.3020486,14z/data=!4m10!1m2!2m1!1sDev+Temple!3m6!1s0x398cf985ebf77ecd:0x1e2d2e1480a5b1a1!8m2!3d24.6852455!4d84.3401574!15sCgpEZXYgVGVtcGxlkgEMaGluZHVfdGVtcGxl4AEA!16s%2Fg%2F11sx0dlbf_?hl=en&entry=ttu" className="text-gray-200 hover:text-gray-800">Get Directions</Link></li>
+                                <li><Link to="https://www.google.com/maps/place/Dev+mandir/@24.6852455,84.3020486,14z/data=!4m10!1m2!2m1!1sDev+Temple!3m6!1s0x398cf985ebf77ecd:0x1e2d2e1480a5b1a1!8m2!3d24.6852455!4d84.3401574!15sCgpEZXYgVGVtcGxlkgEMaGluZHVfdGVtcGxl4AEA!16s%2Fg%2F11sx0dlbf_?hl=en&entry=ttu" className="text-gray-200 hover:text-gray-800">Nearby Views</Link></li>
                             </nav>
                         </div>
                         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
@@ -29,16 +29,16 @@ export default function Footer() {
                             <nav className="flex flex-col gap-1 mb-10 list-none">
                                 <li><Link to="/facilities" className="text-gray-200 hover:text-gray-800">Facilities</Link></li>
                                 <li><Link to="/accommodation" className="text-gray-200 hover:text-gray-800">Accommodations</Link></li>
-                                <li><Link to="/events" className="text-gray-200 hover:text-gray-800">Events</Link></li>
+                                <li><Link to="/eventscomp" className="text-gray-200 hover:text-gray-800">Events</Link></li>
                                 <li><Link to="/restaurant" className="text-gray-200 hover:text-gray-800">Restaurant</Link></li>
                             </nav>
                         </div>
                         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                             <h2 className="mb-3 text-xl font-semibold tracking-widest text-gray-900 title-font">CUSTOMER HELP</h2>
                             <nav className="flex flex-col gap-1 mb-10 list-none">
-                                <li><Link to="/add-reviews" className="text-gray-200 hover:text-gray-800">Add Reviews</Link></li>
-                                <li><Link to="/special-offers" className="text-gray-200 hover:text-gray-800">Special Offers</Link></li>
-                                <li><Link to="/gallery" className="text-gray-200 hover:text-gray-800">Gallery</Link></li>
+                                <li><Link to="https://www.google.com/search?q=the+haweli+resorts+bihar&rlz=1C1RXQR_enIN1065IN1065&oq=the+haweli+resorts+bihar&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB7SAQg4MTgyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&lqi=#lkt=LocalPoiReviews&lrd=0x398cffda9ed112b7:0xfbd08bbf8248e7d8,3,,,,&rlimm=18145156553316558808" className="text-gray-200 hover:text-gray-800">Add Reviews</Link></li>
+                                <li><Link to="/specialoffers" className="text-gray-200 hover:text-gray-800">Special Offers</Link></li>
+                                <li><Link to="/gallerycomp" className="text-gray-200 hover:text-gray-800">Gallery</Link></li>
                                 <li><Link to="/contact" className="text-gray-200 hover:text-gray-800">Contact</Link></li>
                             </nav>
                         </div>
@@ -46,9 +46,9 @@ export default function Footer() {
                             <h2 className="mb-3 text-xl font-semibold tracking-widest text-gray-900 title-font">POLICIES</h2>
                             <nav className="flex flex-col gap-1 mb-10 list-none">
                                 <li><Link to="/support" className="text-gray-200 hover:text-gray-800">Support</Link></li>
-                                <li><Link to="/privacy-policy" className="text-gray-200 hover:text-gray-800">Privacy Policy</Link></li>
-                                <li><Link to="/cancellation-refund-policy" className="text-gray-200 hover:text-gray-800">Cancellation & Refund Policy</Link></li>
-                                <li><Link to="/terms-of-service" className="text-gray-200 hover:text-gray-800">Terms of Service</Link></li>
+                                <li><Link to="/privacypolicy" className="text-gray-200 hover:text-gray-800">Privacy Policy</Link></li>
+                                <li><Link to="/cancellationrefundpolicy" className="text-gray-200 hover:text-gray-800">Cancellation & Refund Policy</Link></li>
+                                <li><Link to="/termsofservice" className="text-gray-200 hover:text-gray-800">Terms of Service</Link></li>
                             </nav>
                         </div>
                     </div>
