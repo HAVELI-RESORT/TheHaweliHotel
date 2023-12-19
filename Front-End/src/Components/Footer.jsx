@@ -4,8 +4,8 @@ import logo from '../assets/img/logo.jpg'
 export default function Footer() {
     return (
         <>
-            <footer className="text-gray-600 bg-yellow-600 bg-opacity-90 body-font">
-                <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+            <footer className="text-gray-600 bg-yellow-600 bg-opacity-90 body-font font-bold">
+                <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap ">
                     <div className="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
                         <Link to="/" className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
                             <img src={logo} className="rounded-full w-14 h-14" alt="Logo" />
@@ -17,7 +17,7 @@ export default function Footer() {
                     <div className="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
                         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                             <h2 className="mb-3 text-xl font-semibold tracking-widest text-gray-900 title-font">HOME</h2>
-                            <nav className="flex flex-col gap-1 mb-10 list-none">
+                            <nav className="flex flex-col gap-1 mb-10 list-none ">
                                 <li><Link to="/about" className="text-gray-200 hover:text-gray-800">About</Link></li>
                                 <li><Link to="/reviews" className="text-gray-200 hover:text-gray-800">Google Reviews</Link></li>
                                 <li><Link to="/directions" className="text-gray-200 hover:text-gray-800">Get Directions</Link></li>

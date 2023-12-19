@@ -1,6 +1,14 @@
 import React from 'react'
-
+import DatePicker from "react-datepicker";
+import { useState } from 'react';
+import "react-datepicker/dist/react-datepicker.css";
 export default function Bookingcomp() {
+
+    const [selectedDate, setSelectedDate] = useState(null);
+
+    const handleDateChange = (date) => {
+        setSelectedDate(date);
+    };
     return (
         <div class="w-full h-full bg-yellow-100 bg-opacity-50">
             <div class="flex flex-col items-center justify-center w-full h-full gap-5 sm:flex-row mt-[60px] p-10">
@@ -98,9 +106,15 @@ export default function Bookingcomp() {
                             </path>
                         </svg>
                             <div class="react-datepicker-wrapper">
-                                <div class="react-datepicker__input-container"><input type="text"
+                            <DatePicker
+                                    selected={selectedDate}
+                                    onChange={handleDateChange}
+                                    dateFormat="dd/MM/yyyy" 
+                                    placeholderText="Select a date" // Customize the date format if needed
+                                />
+                                {/* <div class="react-datepicker__input-container"><input type="text"
                                     placeholder="Select start date" class="border-2 border-gray-200 rounded"
-                                    value="" /></div>
+                                    value="" /></div> */}
                             </div><span class="mx-4 text-gray-500">to</span><svg
                                 class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -109,9 +123,15 @@ export default function Bookingcomp() {
                                 </path>
                             </svg>
                             <div class="react-datepicker-wrapper">
-                                <div class="react-datepicker__input-container"><input type="text"
+                                <DatePicker
+                                    selected={selectedDate}
+                                    onChange={handleDateChange}
+                                    dateFormat="dd/MM/yyyy"  
+                                    placeholderText="Select a date"// Customize the date format if needed
+                                />
+                                {/* <div class="react-datepicker__input-container"><input type="text"
                                     placeholder="Select end date" class="border-2 border-gray-200 rounded"
-                                    value="" /></div>
+                                    value="" /></div> */}
                             </div>
                         </div><label for="bookingType">Booking Type:</label><select id="bookingType" name="bookingType"
                             class="border-2 border-gray-200 rounded" required="">

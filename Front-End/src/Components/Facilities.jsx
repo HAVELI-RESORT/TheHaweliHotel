@@ -4,6 +4,7 @@ import img1 from '../assets/img/pool.jpg'
 import img5 from '../assets/img/hall12.jpg'
 import img6 from '../assets/img/LawnArea.jpg'
 import img7 from '../assets/img/childrenPlay.jpg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -52,43 +53,43 @@ export default function Facilities() {
               </div>
             </div>
             <div class="flex flex-row w-full px-2 sm:pb-10 sm:px-10">
-                    <div class="flex flex-row w-full gap-3 mb-4">
-                        <div class="flex flex-row gap-2"><a href="contact.html">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
-                                        src={img5} alt="Big Banquet Hall"
-                                        class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Big Banquet Hall</h3>
-                                </div>
-                            </a><a href="contact.html">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
-                                        src={img1} alt="Swimming Pool (upcoming)"
-                                        class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Swimming Pool (upcoming)</h3>
-                                </div>
-                            </a></div>
-                        <div class="flex flex-row gap-2"><a href="contact.html">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
-                                        src={img6} alt="Lawn Area"
-                                        class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Lawn Area</h3>
-                                </div>
-                            </a><a href="contact.html">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
-                                        src={img7} alt="Children Play Area"
-                                        class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Children Play Area</h3>
-                                </div>
-                            </a></div>
+              <div class="flex flex-row w-full gap-3 mb-4">
+                <div class="flex flex-row gap-2"><Link to="/contact">
+                  <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                    src={img5} alt="Big Banquet Hall"
+                    class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
+                    <h3
+                      class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                      Big Banquet Hall</h3>
+                  </div>
+                </Link><Link to="/contact">
+                    <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                      src={img1} alt="Swimming Pool (upcoming)"
+                      class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
+                      <h3
+                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                        Swimming Pool (upcoming)</h3>
                     </div>
-                </div>
+                  </Link></div>
+                <div class="flex flex-row gap-2"><Link to="/contact">
+                  <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                    src={img6} alt="Lawn Area"
+                    class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
+                    <h3
+                      class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                      Lawn Area</h3>
+                  </div>
+                </Link><Link to="/contact">
+                    <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                      src={img7} alt="Children Play Area"
+                      class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
+                      <h3
+                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                        Children Play Area</h3>
+                    </div>
+                  </Link></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

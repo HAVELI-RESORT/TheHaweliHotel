@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/img/logo.jpg'
+import { Link } from 'react-router-dom'
 export default function Eventscomp() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
@@ -53,9 +54,9 @@ export default function Eventscomp() {
             </tr>
           </tbody>
         </table>
-        <div class="flex flex-col items-center justify-center p-2 rounded-xl"><a href="contact.html"><button
+        <div class="flex flex-col items-center justify-center p-2 rounded-xl"><Link to="/contact"><button
           class="p-2 font-bold text-gray-900 bg-yellow-500 hover:bg-yellow-600 rounded-xl">Book
-          Event</button></a></div>
+          Event</button></Link></div>
       </div>
     </div>
   )

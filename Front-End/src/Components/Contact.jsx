@@ -1,5 +1,8 @@
 import React from 'react'
 import logo from '../assets/img/logo.jpg'
+import { IoCall } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { SiGmail } from "react-icons/si";
 export default function Contact() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
@@ -39,7 +42,7 @@ export default function Contact() {
                   info@haweli.com
                 </a>
                 <h2 className="mt-4 text-xs font-semibold tracking-widest text-gray-900 title-font">PHONE</h2>
-                <p className="leading-relaxed">+91 9718905221</p>
+                <p className="leading-relaxed"> <IoCall /> +91 9718905221</p>
               </div>
             </div>
           </div>
@@ -62,8 +65,10 @@ export default function Contact() {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  {/* Phone icon */}
+                  
                 </svg>
+                <IoCall />
+
                 +91-9718905221
               </span>
               <span className="flex flex-row items-center text-xl">
@@ -76,8 +81,8 @@ export default function Contact() {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  {/* Phone icon */}
                 </svg>
+                <IoCall />
                 +91-8789618100
               </span>
             </div>
@@ -96,12 +101,13 @@ export default function Contact() {
                 >
                   {/* Whatsapp icon */}
                 </svg>
+                <IoLogoWhatsapp />
                 +91-9718905221
               </span>
             </div>
-            <div className="mb-6">
-              <h2 className="mb-2 text-xl font-semibold">Email</h2>
-              <p className="text-xl">info@haweli.com</p>
+            <h2 className="mb-2  text-xl font-semibold">Email</h2>
+            <div className="mb-6 ml-7">              
+              <spam className="flex flex-row items-center text-xl"> <SiGmail /> &nbsp;  info@haweli.com</spam>
             </div>
           </div>
         </div>

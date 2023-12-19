@@ -23,20 +23,20 @@ export default function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 10000);
+        }, 5000);
 
         // Cleanup interval on component unmount
         return () => clearInterval(interval);
     }, [currentIndex, images.length]);
-    function nextimg(){
-       setCurrentIndex(function (prevCount) {
-        return (prevCount =(prevCount+ 1)%3);
-      });
-    }
-    function previmg(){
+    function nextimg() {
         setCurrentIndex(function (prevCount) {
-            return (prevCount =(prevCount- 1)%3);
-          });
+            return (prevCount = (prevCount + 1) % 3);
+        });
+    }
+    function previmg() {
+        setCurrentIndex(function (prevCount) {
+            return (prevCount = (prevCount - 1) % 3);
+        });
     }
 
 
@@ -118,7 +118,7 @@ export default function Home() {
                     </p>
                     <div className="flex flex-col w-full gap-4 p-2 sm:flex-row sm:h-[400px]">
                         <div className="relative justify-center w-full rounded-xl hover:scale-95">
-                            <Link className="w-full"  to="/accommodation">
+                            <Link className="w-full" to="/accommodation">
                                 <img src={img4} alt="ds" className="object-cover w-full h-full rounded-xl" />
                                 <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px]">
                                     ROOMS
@@ -126,7 +126,7 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="relative justify-center w-full rounded-xl hover:scale-95">
-                            <Link className="w-full"  to="/contact">
+                            <Link className="w-full" to="/contact">
                                 <img src={img5} alt="ds" className="object-cover w-full h-full rounded-xl" />
                                 <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px]">
                                     BANQUET
@@ -134,7 +134,7 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className="relative justify-center w-full rounded-xl hover:scale-95">
-                            <Link className="w-full"  to="/bookingcomp">
+                            <Link className="w-full" to="/bookingcomp">
                                 <img src={img1} alt="ds" className="object-cover w-full h-full rounded-xl" />
                                 <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px]">
                                     PARTY
@@ -145,9 +145,12 @@ export default function Home() {
                 </div>
                 <div className="w-full p-8 bg-yellow-400">
                     <div className="max-w-4xl mx-auto ">
-                        <h1 className="mb-8 text-3xl font-bold text-center">ALL OF OUR ROOMS OFFER THE FOLLOWING AMENITIES</h1>
-                        <div className="flex flex-row ju">
-                            <div className="w-full pr-4 md:w-1/2">
+                        <div className='-ml-[100px]'>
+                            <h1 className="mb-8 text-3xl font-bold text-center ">ALL OF OUR ROOMS OFFER THE FOLLOWING AMENITIES</h1>
+
+                        </div>
+                        <div className="flex flex-row justify-between">
+                            <div className=" w-full pr-4 md:w-1/2">
                                 <ul className="flex flex-col justify-between h-full list-disc">
                                     <li>Tea/Coffee maker</li>
                                     <li>Daily housekeeping & turndown service</li>
@@ -180,44 +183,44 @@ export default function Home() {
                         </div>
                     </div>
                     <div class="flex flex-row w-full px-2 sm:pb-10 sm:px-10">
-                    <div class="flex flex-row w-full gap-3 mb-4">
-                        <div class="flex flex-row gap-2">
-                        <Link to="/contact">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                        <div class="flex flex-row w-full gap-3 mb-4">
+                            <div class="flex flex-row gap-2">
+                                <Link to="/contact">
+                                    <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
                                         src={img5} alt="Big Banquet Hall"
                                         class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Big Banquet Hall</h3>
-                                </div>
-                            </Link><Link to="/contact">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                                        <h3
+                                            class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                                            Big Banquet Hall</h3>
+                                    </div>
+                                </Link><Link to="/contact">
+                                    <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
                                         src={img1} alt="Swimming Pool (upcoming)"
                                         class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Swimming Pool (upcoming)</h3>
-                                </div>
-                            </Link></div>
-                        <div class="flex flex-row gap-2"><Link to="/contact">
+                                        <h3
+                                            class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                                            Swimming Pool (upcoming)</h3>
+                                    </div>
+                                </Link></div>
+                            <div class="flex flex-row gap-2"><Link to="/contact">
                                 <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
-                                        src={img6} alt="Lawn Area"
-                                        class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
+                                    src={img6} alt="Lawn Area"
+                                    class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
                                     <h3
                                         class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
                                         Lawn Area</h3>
                                 </div>
                             </Link><Link to="/contact">
-                                <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
+                                    <div class="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90"><img
                                         src={img7} alt="Children Play Area"
                                         class="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3
-                                        class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Children Play Area</h3>
-                                </div>
-                            </Link></div>
+                                        <h3
+                                            class="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                                            Children Play Area</h3>
+                                    </div>
+                                </Link></div>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <div className="flex items-center justify-center bg-yellow-400 bg-opacity-50">
@@ -226,7 +229,7 @@ export default function Home() {
                             <h2 className="mb-4 text-2xl font-semibold">Current Promotions</h2>
                             <p className="w-full text-gray-600">Stay tuned for current promotions information…</p>
                         </div>
-                        <div className="flex-shrink-0 sm:p-8">
+                        <div className="flex-shrink-0 sm:p-8 ">
                             <img src={logo} alt="Logo" className="w-32 h-32 sm:w-[20rem] sm:h-[20rem] rounded-full" />
                         </div>
                         <div className="flex-1 w-full p-8">
@@ -272,7 +275,7 @@ export default function Home() {
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
                                     <img src={img9} alt="Mahabodhi Temple" className="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
                                     <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                    Maa Tara Chandi Mandir
+                                        Maa Tara Chandi Mandir
                                     </h3>
                                 </div>
                             </a>
@@ -280,7 +283,7 @@ export default function Home() {
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
                                     <img src={img10} alt="Mahabodhi Temple" className="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
                                     <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                    Maa Mundesh- wari Mandir
+                                        Maa Mundesh- wari Mandir
                                     </h3>
                                 </div>
                             </a>
@@ -288,7 +291,7 @@ export default function Home() {
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
                                     <img src={img11} alt="Mahabodhi Temple" className="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
                                     <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                    Maa Tutla Bhawani Mandir
+                                        Maa Tutla Bhawani Mandir
                                     </h3>
                                 </div>
                             </a>
