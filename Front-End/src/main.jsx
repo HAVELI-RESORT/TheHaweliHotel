@@ -16,7 +16,7 @@ import Gallerycomp from './Components/Gallerycomp.jsx'
 import Contact from './Components/Contact.jsx'
 import Bookingcomp from './Components/Bookingcomp.jsx'
 import TermsofService from './Components/TermsofService.jsx'
-import Support from './Components/support.jsx';
+import Support from './Components/Support.jsx';
 import PrivacyPolicy from './Components/PrivacyPolicy.jsx'
 import CancellationRefundPolicy from './Components/CancellationRefundPolicy.jsx'
 const router = createBrowserRouter([
