@@ -11,7 +11,7 @@ export default function Footer() {
                             <img src={logo} className="rounded-full w-14 h-14" alt="Logo" />
                             <span className="ml-3 text-xl">THE HAWELI RESORT</span>
                         </Link>
-                        <p className="mt-2 text-sm font-semibold text-gray-800">Best Place for Marriage, Ring Ceremony, Conference, Birthday Party.</p>
+                        <p className="mt-2 text-sm font-semibold text-gray-800">Best Place for Marriage, Ring Ceremony, Conference, Birthday Parties, Corporate meetings and many more...</p>
                         <p className="mt-2 text-sm font-bold text-gray-900">THE HAWELI RESORT &amp; RESTAURANT, Narbdeshwar Nagar, Rambilash nagar, Bharthauli, Bihar 824101, India</p>
                     </div>
                     <div className="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
@@ -66,6 +66,9 @@ export default function Footer() {
                                 @thehaweliresorts
                             </a>
                         </p>
+                        <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-center">Designed by&nbsp;
+                            <Link to="https://teksila.in/" className="text-[#9a2525]">Teksila.in</Link>
+                        </span>
                         <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                             <a className="text-gray-500" href="https://www.facebook.com/Thehaweliresort">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">

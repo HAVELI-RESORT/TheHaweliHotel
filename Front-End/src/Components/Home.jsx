@@ -13,11 +13,12 @@ import img8 from '../assets/img/bola.jpg'
 import img9 from '../assets/img/Taramaa.jpg'
 import img10 from '../assets/img/maamun.jpg'
 import img11 from '../assets/img/maatutla.jpg'
+import img12 from '../assets/img/front.jpeg'
 
 
 export default function Home() {
 
-    const images = [img3, img2, img1];
+    const images = [img3, img12, img1];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -275,7 +276,7 @@ export default function Home() {
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
                                     <img src={img9} alt="Mahabodhi Temple" className="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
                                     <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Maa Tara Chandi Mandir
+                                        Maa Tarachandi Mandir
                                     </h3>
                                 </div>
                             </a>
@@ -283,7 +284,7 @@ export default function Home() {
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
                                     <img src={img10} alt="Mahabodhi Temple" className="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
                                     <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
-                                        Maa Mundesh- wari Mandir
+                                        Maa Mundeshwari Mandir
                                     </h3>
                                 </div>
                             </a>
