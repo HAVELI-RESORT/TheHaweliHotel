@@ -17,13 +17,13 @@ import img11 from '../assets/img/maatutla.jpg'
 
 export default function Home() {
 
-    const images = [img1, img2, img3];
+    const images = [img3, img2, img1];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000);
+        }, 15000);
 
         // Cleanup interval on component unmount
         return () => clearInterval(interval);
@@ -46,11 +46,11 @@ export default function Home() {
                 <div className="w-full px-5 pt-5 mb-1">
                     <div id="controls-carousel" className="relative w-full" data-carousel="static">
                         <div className="relative w-full h-[16rem] overflow-hidden rounded-lg md:h-[600px] mt-14">
-                            <div className="flex flex-col items-center justify-center h-full p-40 text-center sm:items-start">
-                                <h2 className="z-10 text-xl sm:text-5xl text-center font-bold text-yellow-300 w-[300px]">
+                            <div className="flex flex-col items-center justify-center h-full p-40 text-center sm:items-start mt-[10rem]">
+                                {/* <h2 className="z-10 text-xl sm:text-5xl text-center font-bold text-yellow-300 w-[300px] [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black-500">
                                     THE HAWELI RESORT
-                                </h2>
-                                <div className="flex flex-col sm:gap-2 sm:flex-row">
+                                </h2> */}
+                                <div className="flex flex-col   sm:gap-2 sm:flex-row w-full justify-center">
                                     <button className="z-10 w-[180px] p-2 border border-gray-500 bg-yellow-300 rounded-xl font-bold text-xl mt-4 hover:bg-yellow-400">
                                         <Link to="/bookingcomp">Book Room</Link>
                                     </button>
