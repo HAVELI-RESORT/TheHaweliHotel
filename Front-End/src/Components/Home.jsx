@@ -67,7 +67,7 @@ export default function Home() {
                         </div>
                         <button
                             type="button"
-                            className="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                            className="absolute top-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
                             data-carousel-prev="true"
                             onClick={previmg}
                         >
@@ -80,7 +80,7 @@ export default function Home() {
                         </button>
                         <button
                             type="button"
-                            className="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                            className="absolute top-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
                             data-carousel-next="true"
                             onClick={nextimg}
                         >
@@ -93,7 +93,7 @@ export default function Home() {
                         </button>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-2 mt-20 mb-20">
+                <div className="flex w-full flex-col items-center justify-center gap-2 mt-20 mb-20">
                     <h1 className="text-4xl font-bold">RESORT AT A GLANCE</h1>
                     <div className="flex flex-row items-center justify-center gap-2">
                         <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
                 <div className="w-full p-8 bg-yellow-400">
                     <div className="max-w-4xl mx-auto ">
-                        <div className='-ml-[100px]'>
+                        <div className=''>
                             <h1 className="mb-8 text-3xl font-bold text-center ">ALL OF OUR ROOMS OFFER THE FOLLOWING AMENITIES</h1>
 
                         </div>

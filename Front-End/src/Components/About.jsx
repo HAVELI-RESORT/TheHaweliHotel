@@ -3,12 +3,12 @@ import logo from '../assets/img/logo.jpg'
 export default function About() {
     return (
         <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-            <main className="container flex flex-col gap-1 text-justify mt-[72px] ml-[2rem]">
+            <main className="container flex flex-col gap-1 text-justify mt-[72px]">
                 <h1 className="mt-2 mb-4 text-4xl font-bold text-center">ABOUT US</h1>
-                <div className="flex flex-col w-full mx-auto text-justify sm:flex-row">
-                    <div className="flex flex-col w-full">
-                        <h1 className="mb-4 text-2xl font-bold text-center sm:text-left sm:text-4xl">THE HAWELI RESORT</h1>
-                        <p className="mb-6">
+                <div className="flex flex-col w-full sm:mx-auto text-justify sm:flex-row">
+                    <div className="flex flex-col w-full p-5">
+                        <h1 className=" mb-4 text-2xl font-bold text-center sm:text-left sm:text-4xl">THE HAWELI RESORT</h1>
+                        <p className=" mb-6">
                             Our team at "The Haweli || Resort & Restaurant ||" is a dedicated and passionate group of individuals
                             committed to ensuring that every guest has a memorable and enjoyable experience. From the moment you step into
                             our resort, our team is ready to cater to your needs with warmth and professionalism. Whether you're here for a
