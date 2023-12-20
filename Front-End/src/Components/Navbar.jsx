@@ -9,7 +9,7 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <nav className="fixed top-0 z-30 w-full p-4 text-black bg-yellow-600 bg-opacity-70 overflow-x-hidden">
+            <nav className=" top-0 z-0 w-full p-4 text-black bg-yellow-600 bg-opacity-70 overflow-x-hidden">
                 <div className="w-full flex justify-center items-center  font-semibold ">
 
                     {/* logo */}
@@ -50,7 +50,7 @@ export default function Navbar() {
                     </div>
 
                     {/* mobile viewBox */}
-                    {open && <div  className="absolute right-6 top-20 rounded-xl p-4 text-black bg-white z-30 opacity-90 ">
+                    {open && <div className="absolute right-6 top-20 rounded-xl p-4 text-black bg-white z-30 opacity-90 ">
                         <div className=" ">
                             <Link to="/about" className='text-sm' onClick={() => setOpen(!open)}>
                                 <p className="hover:underline  py-1 ">ABOUT</p>
@@ -68,7 +68,7 @@ export default function Navbar() {
                                 <p className="hover:underline py-1" onClick={() => setOpen(!open)}>FACILITIES</p>
                             </Link>
                             <Link to="/specialoffers" className='text-sm' onClick={() => setOpen(!open)}>
-                                <div className="hover:underline py-1" >SPECIAL&nbsp;OFFERS</div>
+                                <p className="hover:underline py-1" >SPECIAL&nbsp;OFFERS</p>
                             </Link>
                             <Link to="/gallerycomp" className='text-sm' onClick={() => setOpen(!open)}>
                                 <p className="hover:underline py-1">GALLERY</p>
