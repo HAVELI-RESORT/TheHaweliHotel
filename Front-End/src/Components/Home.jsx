@@ -248,7 +248,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex flex-row w-full px-10 pb-10">
-                        <button>
+                        <button className='hidden sm:block'>
                             <svg
                                 stroke="currentColor"
                                 fill="currentColor"
@@ -261,7 +261,7 @@ export default function Home() {
                                 <path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
                             </svg>
                         </button>
-                        <div className="flex flex-row w-full gap-3">
+                        <div className="w-full flex sm:flex-row justify-center gap-4  flex-wrap sm:flex-nowrap">
                             {/* Repeat the following block for each nearby location */}
                             <a href="https://www.google.com/maps/place/Mahabodhi+Temple/@24.6959222,84.9888444,17z/data=!3m1!4b1!4m6!3m5!1s0x39f32c5b4bd80877:0xf8dd2e286fa80c97!8m2!3d24.6959222!4d84.9914193!16zL20vMDFneXl2?hl=en&amp;entry=ttu">
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
@@ -282,7 +282,7 @@ export default function Home() {
                             <a href="https://www.google.com/maps/place/Mahabodhi+Temple/@24.6959222,84.9888444,17z/data=!3m1!4b1!4m6!3m5!1s0x39f32c5b4bd80877:0xf8dd2e286fa80c97!8m2!3d24.6959222!4d84.9914193!16zL20vMDFneXl2?hl=en&amp;entry=ttu">
                                 <div className="relative justify-center w-auto bg-gray-400 rounded-xl hover:scale-90">
                                     <img src={img10} alt="Mahabodhi Temple" className="sm:h-[320px] h-[150px] rounded-xl object-cover w-[200px] sm:w-[400px]" />
-                                    <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px]">
+                                    <h3 className="absolute bottom-0 w-full mb-4 text-[10px] font-bold text-center text-gray-200 bg-yellow-600 sm:p-2 sm:text-[18px] ">
                                         Maa Mundeshwari Mandir
                                     </h3>
                                 </div>
@@ -297,7 +297,7 @@ export default function Home() {
                             </a>
                             {/* Repeat the above block for each nearby location */}
                         </div>
-                        <button>
+                        <button  className='hidden sm:block'>
                             <svg
                                 stroke="currentColor"
                                 fill="currentColor"
