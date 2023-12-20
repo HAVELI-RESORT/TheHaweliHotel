@@ -51,15 +51,13 @@ import img47 from '../assets/img/2(12).jpeg'
 export default function Gallerycomp() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-      <div class="flex flex-col ">
-        <p
-          class="flex flex-row items-center justify-center w-full mt-5 mb-4 text-4xl font-bold underline sm:mb-0">
-          Gallery</p>
-          <div className="flex flex-row items-center justify-center gap-2">
-                        <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
-                        <img src={logo} className="rounded-full w-14 h-14" />
-                        <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
-                    </div>
+      <div class="flex flex-col w-full justify-center items-center pt-[10px]">
+        <p className="mx-auto text-2xl font-bold">GALLERY</p>
+        <div className="flex flex-row items-center justify-center gap-2">
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <img src={logo} className="rounded-full w-14 h-14" />
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+        </div>
         <section class="-mt-24 text-gray-600 body-font">
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col w-full mb-20 text-center">

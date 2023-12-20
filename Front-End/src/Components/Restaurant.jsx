@@ -15,8 +15,8 @@ export default function Restaurant() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
       <div class="flex flex-col w-full justify-center items-center ">
-        <p class="mx-10 text-xl font-bold">RESTAURANT</p>
-        <p class="text-3xl font-bold ">Order Food &amp; Services</p>
+        <p class="mx-10 sm:text-3xl text-2xl font-bold">RESTAURANT</p>
+        <p class="sm:text-3xl text-xl font-bold ">Order Food &amp; Services</p>
         <div className="flex flex-row items-center justify-center gap-2">
           <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
           <img src={logo} className="rounded-full w-14 h-14" />

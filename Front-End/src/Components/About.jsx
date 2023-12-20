@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/img/logo.jpg'
+import { Link } from 'react-router-dom'
 export default function About() {
     return (
         <div class="w-full h-full bg-yellow-100 bg-opacity-50">
@@ -34,12 +35,12 @@ export default function About() {
                     <div className="flex flex-col items-center justify-center w-full h-auto mt-4 text-center sm:w-7/12">
                         <img src={logo} alt="The Haweli Resort" className="rounded-full w-80 h-80" />
                         <div className="flex flex-row justify-center w-full mt-4 items-center">
-                            <a
+                            <Link to="/contact"
                                 href="contact.html"
                                 className="px-6 py-3 mb-0 font-bold text-white transition duration-300 bg-black rounded-lg sm:mb-10 hover:bg-yellow-700"
                             >
                                 BOOK NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
