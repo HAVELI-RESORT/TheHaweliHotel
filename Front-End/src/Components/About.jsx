@@ -3,7 +3,7 @@ import logo from '../assets/img/logo.jpg'
 export default function About() {
     return (
         <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-            <main className="container flex flex-col gap-1 text-justify mt-[72px]">
+            <main className="container flex flex-col gap-1 text-justify ">
                 <h1 className="mt-2 mb-4 text-4xl font-bold text-center">ABOUT US</h1>
                 <div className="flex flex-col w-full sm:mx-auto text-justify sm:flex-row">
                     <div className="flex flex-col w-full p-5">
@@ -43,8 +43,8 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <h2 className="mt-5 mb-4 text-2xl font-bold sm:mt-0">Contact Us</h2>
-                <p>
+                <h2 className="mt-5 mb-4 text-2xl font-bold sm:mt-0 m-4">Contact Us</h2>
+                <p className='m-4'>
                     We value your inquiries and feedback at "The Haweli || Resort & Restaurant ||" and strive to provide prompt and
                     helpful assistance. Whether you have questions about booking an event, accommodation details, or general
                     inquiries about our resort, our dedicated team is here to assist you.

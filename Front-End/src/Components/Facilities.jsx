@@ -12,10 +12,10 @@ export default function Facilities() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
       <div class="flex flex-col items-center justify-center w-full">
-        <div class=" mt-[72px] w-full">
+        <div class="  w-full">
           <div class="w-full p-8 bg-yellow-400">
             <div class="max-w-4xl mx-auto ">
-              <h1 class="mb-8 text-3xl font-bold text-center">ALL OF OUR ROOMS OFFER THE FOLLOWING
+              <h1 class="mb-8 text-xl sm:text-3xl font-bold text-center">ALL OF OUR ROOMS OFFER THE FOLLOWING
                 AMENITIES</h1>
               <div class="flex flex-row ju">
                 <div class="w-full pr-4 md:w-1/2">

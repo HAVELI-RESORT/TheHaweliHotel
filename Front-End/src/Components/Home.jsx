@@ -44,9 +44,9 @@ export default function Home() {
     return (
         <div>
             <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-                <div className="w-full px-5 pt-5 mb-1">
+                <div className="w-full px-5 pt-2 mb-1">
                     <div id="controls-carousel" className="relative w-full" data-carousel="static">
-                        <div className="relative w-full h-[16rem] overflow-hidden rounded-lg md:h-[600px] mt-14">
+                        <div className="relative w-full h-[16rem] overflow-hidden rounded-lg md:h-[600px] ">
                             <div className="flex flex-col items-center justify-center h-full p-40 text-center sm:items-start mt-[10rem]">
                                 {/* <h2 className="z-10 text-xl sm:text-5xl text-center font-bold text-yellow-300 w-[300px] [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black-500">
                                     THE HAWELI RESORT
@@ -93,8 +93,8 @@ export default function Home() {
                         </button>
                     </div>
                 </div>
-                <div className="flex w-full flex-col items-center justify-center gap-2 mt-20 mb-20">
-                    <h1 className="text-4xl font-bold">RESORT AT A GLANCE</h1>
+                <div className="flex w-full flex-col items-center justify-center gap-2 sm:mt-20 mt-0 mb-20">
+                    <h1 className="text-2xl sm:text-4xl font-bold">RESORT AT A GLANCE</h1>
                     <div className="flex flex-row items-center justify-center gap-2">
                         <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
                         <img src={logo} className="rounded-full w-14 h-14" />
@@ -106,14 +106,13 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center justify-center p-10 bg-yellow-100">
                     <p className="mx-10 text-xl font-bold">ACCOMMODATION</p>
-                    <p className="text-xl font-bold sm:text-3xl">Our Rooms & Services</p>
-                    <div className="hidden w-full mb-4 sm:block">
-                        <div className="flex flex-row items-center justify-center gap-3 sm:w-full px-80">
-                            <hr className="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-                            <img src={logo} className="w-10 h-10 rounded-full" />
-                            <hr className="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-                        </div>
+                    <div className="flex flex-row items-center justify-center gap-2">
+                        <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+                        <img src={logo} className="rounded-full w-14 h-14" />
+                        <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
                     </div>
+                    <p className="text-xl font-bold sm:text-3xl">Our Rooms & Services</p>
+                    
                     <p className="mb-5 font-semibold text-center sm:w-[700px]">
                         Immerse yourself in the epitome of luxury. Book your room now and unlock a world of unparalleled comfort, breathtaking views, and personalized service. Your unforgettable escape begins at our resort.
                     </p>
@@ -121,7 +120,7 @@ export default function Home() {
                         <div className="relative justify-center w-full rounded-xl hover:scale-95">
                             <Link className="w-full" to="/accommodation">
                                 <img src={img4} alt="ds" className="object-cover w-full h-full rounded-xl" />
-                                <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px]">
+                                <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px] text-xl">
                                     ROOMS
                                 </h3>
                             </Link>
@@ -129,7 +128,7 @@ export default function Home() {
                         <div className="relative justify-center w-full rounded-xl hover:scale-95">
                             <Link className="w-full" to="/contact">
                                 <img src={img5} alt="ds" className="object-cover w-full h-full rounded-xl" />
-                                <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px]">
+                                <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px] text-xl">
                                     BANQUET
                                 </h3>
                             </Link>
@@ -137,7 +136,7 @@ export default function Home() {
                         <div className="relative justify-center w-full rounded-xl hover:scale-95">
                             <Link className="w-full" to="/bookingcomp">
                                 <img src={img1} alt="ds" className="object-cover w-full h-full rounded-xl" />
-                                <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px]">
+                                <h3 className="absolute bottom-0 w-full rounded-b-xl text-[10px] font-bold text-center text-gray-900 bg-yellow-500 sm:p-2 sm:text-[18px] text-xl">
                                     PARTY
                                 </h3>
                             </Link>
@@ -147,7 +146,7 @@ export default function Home() {
                 <div className="w-full p-8 bg-yellow-400">
                     <div className="max-w-4xl mx-auto ">
                         <div className=''>
-                            <h1 className="mb-8 text-3xl font-bold text-center ">ALL OF OUR ROOMS OFFER THE FOLLOWING AMENITIES</h1>
+                            <h1 className="mb-8 text-xl sm:text-3xl font-bold text-center ">ALL OF OUR ROOMS OFFER THE FOLLOWING AMENITIES</h1>
 
                         </div>
                         <div className="flex flex-row justify-between">
@@ -373,7 +372,7 @@ export default function Home() {
                 </section>
                 <div className="flex flex-col items-center justify-center mb-2">
                     <h1 className="text-xl">LOCATION</h1>
-                    <p className="text-5xl font-semibold">Where to Find Us</p>
+                    <p className="text-xl sm:text-5xl font-semibold">Where to Find Us</p>
                 </div>
                 <div className="hidden mb-4 sm:block">
                     <div className="flex flex-row items-center justify-center gap-3 sm:w-full px-80">
@@ -412,12 +411,12 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col w-full mt-8 lg:w-1/3 md:w-1/2 md:ml-auto md:py-8 md:mt-0">
+                        <div className="flex flex-col w-full mt-8 lg:w-1/3 md:w-1/2 md:ml-auto md:py-8 md:mt-0 m-4">
                             <h2 className="mb-1 text-lg font-medium text-gray-900 title-font">Feedback Form</h2>
                             <p className="mb-5 leading-relaxed text-gray-600">
                                 Your feedback is invaluable to us, as it shapes our commitment to continuous improvement and excellence.
                             </p>
-                            <div className="relative mb-4">
+                            <div className="relative m-4">
                                 <label htmlFor="name" className="text-sm leading-7 text-gray-600">
                                     Name
                                 </label>
@@ -428,7 +427,7 @@ export default function Home() {
                                     name="name"
                                 />
                             </div>
-                            <div className="relative mb-4">
+                            <div className="relative m-4">
                                 <label htmlFor="email" className="text-sm leading-7 text-gray-600">
                                     Email
                                 </label>
@@ -439,7 +438,7 @@ export default function Home() {
                                     name="email"
                                 />
                             </div>
-                            <div className="relative mb-4">
+                            <div className="relative m-4">
                                 <label htmlFor="message" className="text-sm leading-7 text-gray-600">
                                     Message
                                 </label>
@@ -449,7 +448,7 @@ export default function Home() {
                                     className="w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded outline-none resize-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200"
                                 ></textarea>
                             </div>
-                            <button className="px-6 py-2 text-lg text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                            <button className="px-6 py-2 text-lg text-white bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600 m-4">
                                 Submit
                             </button>
                             <p className="mt-3 text-xs text-gray-500">

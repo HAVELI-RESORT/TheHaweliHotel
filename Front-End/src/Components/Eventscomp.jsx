@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 export default function Eventscomp() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-      <div class="container p-4 mx-auto mt-[73px]">
-        <h1 class="text-3xl font-bold text-center ">Events and Charges</h1>
+      <div class="container p-4 mx-auto ">
+        <h1 class="text-3xl font-bold text-center mb-2">Events and Charges</h1>
         <div class="hidden w-full sm:block">
           <div class="flex flex-row items-center justify-center gap-3 sm:w-full px-80">
             <hr class="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
@@ -24,12 +24,12 @@ export default function Eventscomp() {
           <tbody>
             <tr>
               <td class="px-4 py-2 border-b">Engagement</td>
-              <td class="px-4 py-2 border-b">4 Rooms, 1 Hall with Decoration</td>
+              <td class="px-4 py-2 border-b">4 Rooms, 1&nbsp;Hall with Decoration</td>
               <td class="px-4 py-2 border-b">40,000</td>
             </tr>
             <tr>
               <td class="px-4 py-2 border-b">Meeting</td>
-              <td class="px-4 py-2 border-b">Only Hall (5-6 hrs)</td>
+              <td class="px-4 py-2 border-b">Only Hall &nbsp; &nbsp;(5-6 hrs)</td>
               <td class="px-4 py-2 border-b">15,000</td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@ export default function Eventscomp() {
             </tr>
             <tr>
               <td class="px-4 py-2 border-b">Engagement</td>
-              <td class="px-4 py-2 border-b">8 rooms, 2 Halls with Decoration</td>
+              <td class="px-4 py-2 border-b">8 rooms, 2&nbsp;Halls with Decoration</td>
               <td class="px-4 py-2 border-b">60,000</td>
             </tr>
             <tr>

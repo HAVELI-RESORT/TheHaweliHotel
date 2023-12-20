@@ -3,10 +3,10 @@ import React from 'react'
 export default function TermsofService() {
     return (
         <>
-            <div className='w-full h-full bg-yellow-100 bg-opacity-50 mb-[10px]'>
+            <div className='w-full h-full bg-yellow-100 bg-opacity-50 pb-[10px]'>
 
-                <div className="container mx-auto mt-[72px] ml-[2rem]">
-                    <h1 className="mb-4 text-3xl font-bold">Terms of Service</h1>
+                <div className="container mx-auto mt-4 ml-[2rem]">
+                    <h1 className="text-3xl font-bold">Terms of Service</h1>
                     <p>Welcome to THE HAWELI RESORT! These terms of service outline the rules and regulations for the use of
                         our website located at [your website URL].</p>
                     <h2 className="mt-4 mb-2 text-xl font-bold">1. Acceptance of Terms</h2>
@@ -16,7 +16,7 @@ export default function TermsofService() {
                     <h2 className="mt-4 mb-2 text-xl font-bold">2. Intellectual Property</h2>
                     <p>The content of this website is protected by copyright and other laws, and is the property of THE
                         HAWELI RESORT. All rights are reserved.</p>
-                    <h2 className="mt-4 mb-2 text-xl font-bold">Contact Information</h2>
+                    <h2 className="mt-4  text-xl font-bold">Contact Information</h2>
                     <p>If you have any questions or concerns regarding these terms of service, please contact us at
                         info@haweli.com.</p>
                 </div>

@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
                         <Link to="/" className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
                             <img src={logo} className="rounded-full w-14 h-14" alt="Logo" />
-                            <span className="ml-3 text-xl">THE HAWELI RESORT</span>
+                            <span className="ml-3 sm:text-xl">THE HAWELI RESORT</span>
                         </Link>
                         <p className="mt-2 text-sm font-semibold text-gray-800">Best Place for Marriage, Ring Ceremony, Conference, Birthday Parties, Corporate meetings and many more...</p>
                         <p className="mt-2 text-sm font-bold text-gray-900">THE HAWELI RESORT &amp; RESTAURANT, Narbdeshwar Nagar, Rambilash nagar, Bharthauli, Bihar 824101, India</p>

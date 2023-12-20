@@ -29,15 +29,14 @@ export default function Accommodation() {
 
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-      <div className="flex flex-col w-full justify-center items-center mt-[75px]">
+      <div className="flex flex-col w-full justify-center items-center pt-[10px] ">
         <p className="mx-10 text-2xl font-bold">ACCOMMODATION</p>
-        <p className="text-3xl font-bold">Our Rooms & Services</p>
-        <div className="hidden w-full sm:block">
-          <div className="flex flex-row items-center justify-center gap-3 sm:w-full px-80">
-            <hr className="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-            <img src={logo} className="w-10 h-10 rounded-full" alt="Logo" />
-            <hr className="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-          </div>
+
+        <p className="text-xl sm:text-3xl font-bold">Our Rooms & Services</p>
+        <div className="flex flex-row items-center justify-center gap-2">
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <img src={logo} className="rounded-full w-14 h-14" />
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
         <p className="mb-5 font-semibold text-center sm:w-[700px]">
           Immerse yourself in the epitome of luxury. Book your room now and unlock a world of unparalleled comfort, breathtaking

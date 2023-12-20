@@ -6,15 +6,13 @@ import { SiGmail } from "react-icons/si";
 export default function Contact() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-      <div className="flex flex-col mt-[75px]">
+      <div className="flex flex-col pt-[10px]">
         <p className="text-5xl font-bold text-center">Contact Us</p>
-        <div className="hidden mt-4 sm:block">
-          <div className="flex flex-row items-center justify-center gap-3 sm:w-full px-80">
-            <hr className="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-            <img src={logo} className="rounded-full w-14 h-14" />
-            <hr className="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-          </div>
-        </div>
+        <div className="flex flex-row items-center justify-center gap-2 mt-4">
+                        <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+                        <img src={logo} className="rounded-full w-14 h-14" />
+                        <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+                    </div>
         <div className="flex flex-col w-full p-10 bg-transparent sm:flex-row">
           {/* Google Map */}
           <div className="relative flex items-end justify-start w-full p-4 overflow-hidden border-2 border-gray-200 rounded-lg lg:w-2/3 md:w-1/2 sm:mr-10">

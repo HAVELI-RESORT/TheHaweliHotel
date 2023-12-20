@@ -3,8 +3,8 @@ import React from 'react'
 export default function PrivacyPolicy() {
     return (
         <>
-            <div className="w-full h-full bg-yellow-100 bg-opacity-50 mb-[10px] ">
-                <div className=" mt-[72px] h-full">
+            <div className="w-full h-full bg-yellow-100 bg-opacity-50  ">
+                <div className=" h-full">
                     <header className="p-4 text-center text-black">
                         <h1 className="text-2xl font-semibold">Privacy Policy</h1>
                     </header>

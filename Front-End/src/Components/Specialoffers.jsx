@@ -4,7 +4,7 @@ export default function Specialoffers() {
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
       <div class="flex flex-row items-start justify-center h-full bg-yellow-100">
-        <div class="flex items-center justify-center bg-yellow-400 bg-opacity-50 mt-[73px] w-screen">
+        <div class="flex items-center justify-center bg-yellow-400 bg-opacity-50  w-screen">
           <div class="flex flex-col items-center justify-center h-full sm:flex-row">
             <div class="flex-1 w-full p-8">
               <h2 class="mb-4 text-2xl font-semibold">Current Promotions</h2>

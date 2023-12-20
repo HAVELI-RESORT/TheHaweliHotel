@@ -14,19 +14,17 @@ export default function Restaurant() {
   };
   return (
     <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-      <div class="flex flex-col w-full justify-center items-center mt-[75px]">
+      <div class="flex flex-col w-full justify-center items-center ">
         <p class="mx-10 text-xl font-bold">RESTAURANT</p>
         <p class="text-3xl font-bold ">Order Food &amp; Services</p>
-        <div class="hidden w-full sm:block">
-          <div class="flex flex-row items-center justify-center gap-3 sm:w-full px-80">
-            <hr class="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-            <img src={logo} class="w-10 h-10 rounded-full" />
-            <hr class="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
-          </div>
+        <div className="flex flex-row items-center justify-center gap-2">
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <img src={logo} className="rounded-full w-14 h-14" />
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-900 border-0 rounded md:my-10 dark:bg-gray-700" />
         </div>
         <p class="mb-5 font-semibold text-center">Book your food now and experience the exquisite flavors that
           await you at our resort.</p>
-        <div class="flex flex-row w-full p-4 mx-auto">
+        <div class="flex flex-row flex-wrap w-full p-4 mx-auto">
           <div class="flex flex-row items-center justify-center w-full"><button class="flex" onClick={changepic}><svg
             stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
             class="w-10 h-10" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">

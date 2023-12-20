@@ -3,8 +3,8 @@ import React from 'react'
 export default function CancellationRefundPolicy() {
   return (
     <>
-      <div className="w-full h-full bg-yellow-100 bg-opacity-50 mb-[10px] ">
-        <div className="container mx-auto mt-[72px] p-8">
+      <div className="w-full h-full bg-yellow-100 bg-opacity-50  ">
+        <div className="container mx-auto p-8">
           <h1 className="mb-4 text-3xl font-bold">Hotel Booking</h1>
           <div className="p-6 bg-white rounded-md shadow-md bg-opacity-30">
             <h2 className="mb-4 text-xl font-bold">Cancellation Policy</h2>
