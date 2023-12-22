@@ -13,44 +13,44 @@ export default function Eventscomp() {
             <hr class="h-1 mx-auto my-4 bg-gray-900 border-0 rounded sm:w-full md:my-10 dark:bg-gray-700" />
           </div>
         </div>
-        <table class="min-w-full bg-white border border-gray-300">
+        <table class="min-w-full bg-white border border-gray-300 ">
           <thead>
             <tr>
-              <th class="px-4 py-2 border-b">Event</th>
-              <th class="px-4 py-2 border-b">Description</th>
-              <th class="px-4 py-2 border-b">Charge</th>
+              <th class="px-4 py-2 border-b border-slate-300">Event</th>
+              <th class="px-4 py-2 border-b border-slate-300">Description</th>
+              <th class="px-4 py-2 border-b border-slate-300">Charge</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="px-4 py-2 border-b">Engagement</td>
-              <td class="px-4 py-2 border-b">4 Rooms, 1&nbsp;Hall with Decoration</td>
-              <td class="px-4 py-2 border-b">40,000</td>
+              <td class="px-4 py-2 border-b text-center">Engagement</td>
+              <td class="px-4 py-2 border-b text-center">4 Rooms, 1&nbsp;Hall with Decoration</td>
+              <td class="px-4 py-2 border-b text-center">40,000</td>
             </tr>
             <tr>
-              <td class="px-4 py-2 border-b">Meeting</td>
-              <td class="px-4 py-2 border-b">Only Hall &nbsp; &nbsp;(5-6 hrs)</td>
-              <td class="px-4 py-2 border-b">15,000</td>
+              <td class="px-4 py-2 border-b text-center">Meeting</td>
+              <td class="px-4 py-2 border-b text-center">Only Hall &nbsp; &nbsp;(5-6 hrs)</td>
+              <td class="px-4 py-2 border-b text-center">15,000</td>
             </tr>
             <tr>
-              <td class="px-4 py-2 border-b">Birthday</td>
-              <td class="px-4 py-2 border-b">Only Hall with Decoration</td>
-              <td class="px-4 py-2 border-b">20,000</td>
+              <td class="px-4 py-2 border-b text-center">Birthday</td>
+              <td class="px-4 py-2 border-b text-center">Only Hall with Decoration</td>
+              <td class="px-4 py-2 border-b text-center">20,000</td>
             </tr>
             <tr>
-              <td class="px-4 py-2 border-b">Engagement</td>
-              <td class="px-4 py-2 border-b">4 rooms, Big Hall with Decoration</td>
-              <td class="px-4 py-2 border-b">60,000</td>
+              <td class="px-4 py-2 border-b text-center">Engagement</td>
+              <td class="px-4 py-2 border-b text-center">4 rooms, Big Hall with Decoration</td>
+              <td class="px-4 py-2 border-b text-center">60,000</td>
             </tr>
             <tr>
-              <td class="px-4 py-2 border-b">Engagement</td>
-              <td class="px-4 py-2 border-b">8 rooms, 2&nbsp;Halls with Decoration</td>
-              <td class="px-4 py-2 border-b">60,000</td>
+              <td class="px-4 py-2 border-b text-center">Engagement</td>
+              <td class="px-4 py-2 border-b text-center">8 rooms, 2&nbsp;Halls with Decoration</td>
+              <td class="px-4 py-2 border-b text-center">60,000</td>
             </tr>
             <tr>
-              <td class="px-4 py-2 border-b">Resort </td>
-              <td class="px-4 py-2 border-b">Full Wedding Setup</td>
-              <td class="px-4 py-2 border-b">2,11,000</td>
+              <td class="px-4 py-2 border-b text-center">Resort </td>
+              <td class="px-4 py-2 border-b text-center">Full Wedding Setup</td>
+              <td class="px-4 py-2 border-b text-center">2,11,000</td>
             </tr>
           </tbody>
         </table>
