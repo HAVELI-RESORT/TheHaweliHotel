@@ -83,7 +83,7 @@ export default function Navbar() {
                     {/* button */}
                     <div className="flex flex-row items-center justify-end space-x-4 ml-[2rem] ">
                         <Link to="/bookingcomp">
-                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-primary text-primary-foreground h-10 py-1 px-2 hover:bg-yellow-700 bg-black text-white">
+                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-primary text-primary-foreground h-10 py-1 px-2 hover:bg-yellow-700 bg-green-800 text-white">
                                 BOOK&nbsp;NOW
                             </button>
                         </Link>

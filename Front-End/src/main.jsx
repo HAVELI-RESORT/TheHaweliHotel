@@ -19,6 +19,8 @@ import TermsofService from './Components/TermsofService.jsx'
 import Support from './Components/Support.jsx';
 import PrivacyPolicy from './Components/PrivacyPolicy.jsx'
 import CancellationRefundPolicy from './Components/CancellationRefundPolicy.jsx'
+import Admin from './Components/Admin.jsx';
+import Cart from './Components/Cart.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -74,7 +76,13 @@ const router = createBrowserRouter([
       },{
         path: "CancellationRefundPolicy",
         element: <CancellationRefundPolicy />
-      },
+      },{
+        path:"Admin",
+        element:<Admin/>
+      },{
+        path:"Cart",
+        element:<Cart/>
+      }
 
     ]
   }

@@ -1,17 +1,61 @@
 import React from 'react'
 import DatePicker from "react-datepicker";
+import axios from 'axios';
 import { useState } from 'react';
+import { useForm } from "react-hook-form";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from 'react-router-dom';
 export default function Bookingcomp() {
 
     const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedDate1, setSelectedDate1] = useState(null);
+    const { register, handleSubmit } = useForm();
+    const createEmployee = async (data) => {
 
+        const savedUserResponse = await fetch(
+            `http://127.0.0.1:4000/api/v1/createUser`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ ...data }),
+            }
+        );
+        console.log("FORM RESPONSE......", savedUserResponse);
+    };
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
+    const handleDateChange1 = (date) => {
+        setSelectedDate1(date);
+    };
+
+    const data = {
+        name: 'Waleed',
+        amount: 1,
+        number: '7498608775',
+        MUID: "MUID" + Date.now(),
+        transactionId: 'T' + Date.now(),
+    }
+
+    const handlePayment = (e) => {
+        e.preventDefault();
+        // setLoading2(true);
+        axios.post('http://localhost:4000/api/payment', { ...data }).then(res => {
+            setTimeout(() => {
+                // setLoading2(false);
+            }, 1500);
+        })
+            .catch(error => {
+                // setLoading2(false)
+                console.error(error);
+            });
+    }
+
     return (
         <div class="w-full h-full bg-yellow-100 bg-opacity-50">
-            <div class="flex flex-col items-center justify-center w-full h-full gap-5 sm:flex-row mt-[60px] p-10">
+            <div class="flex flex-col items-center justify-center w-full h-full gap-5 sm:flex-row p-10">
                 <div class="flex flex-row items-start justify-center w-full h-full">
                     <div class="flex flex-col items-center justify-start h-full">
                         <p class="m-10 text-4xl font-bold">ROOMS AVAILABILITY</p>
@@ -95,60 +139,50 @@ export default function Bookingcomp() {
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-row items-center justify-center w-full h-full">
-                    <form class="flex flex-col justify-center w-full h-full gap-3 p-10 bg-yellow-200">
-                        <p class="m-2 text-3xl font-bold text-center">Book Your Visit</p>
-                        <div class="flex flex-col items-center justify-center gap-2 sm:flex-row"><svg
-                            class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z">
-                            </path>
-                        </svg>
-                            <div class="react-datepicker-wrapper">
-                            <DatePicker
-                                    selected={selectedDate}
-                                    onChange={handleDateChange}
-                                    dateFormat="dd/MM/yyyy" 
-                                    placeholderText="Select a date" // Customize the date format if needed
-                                />
-                                {/* <div class="react-datepicker__input-container"><input type="text"
-                                    placeholder="Select start date" class="border-2 border-gray-200 rounded"
-                                    value="" /></div> */}
-                            </div><span class="mx-4 text-gray-500">to</span><svg
-                                class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z">
-                                </path>
+                <div className="flex flex-row items-center justify-center w-full h-full">
+                    {/*onSubmit={handleSubmit(createEmployee)}  */}
+                    {/* onSubmit={handlePayment} */}
+                    <form className="flex flex-col justify-center w-full h-full gap-3 p-10 bg-yellow-200">
+                        <p className="m-2 text-3xl font-bold text-center">Book Your Visit</p>
+                        <div className="flex flex-col items-center justify-center gap-2 sm:flex-row">
+                            <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                {/* ... (path for the calendar icon) */}
                             </svg>
-                            <div class="react-datepicker-wrapper">
-                                <DatePicker
-                                    selected={selectedDate}
-                                    onChange={handleDateChange}
-                                    dateFormat="dd/MM/yyyy"  
-                                    placeholderText="Select a date"// Customize the date format if needed
+                            <div className="react-datepicker-wrapper">
+                                <input type='date'
+                                    placeholderText="Select a date"
+                                    {...register("startDate")}
                                 />
-                                {/* <div class="react-datepicker__input-container"><input type="text"
-                                    placeholder="Select end date" class="border-2 border-gray-200 rounded"
-                                    value="" /></div> */}
                             </div>
-                        </div><label for="bookingType">Booking Type:</label><select id="bookingType" name="bookingType"
-                            class="border-2 border-gray-200 rounded" required="">
-                            <option value="" disabled="" selected="">Select booking type</option>
-                            <option value="SUIT">Suit</option>
-                            <option value="ROOM">ROOM</option>
-                        </select><label for="name">Name:</label><input type="text" id="name" placeholder="Name"
-                            class="border-2 border-gray-200 rounded" required="" name="name" value="" /><label
-                                for="email">Email:</label><input type="email" id="email" placeholder="Email"
-                                    class="border-2 border-gray-200 rounded" required="" name="email" value="" /><label
-                                        for="phoneNumber">Phone Number:</label><input type="tel" id="phoneNumber"
-                                            placeholder="Phone Number" class="border-2 border-gray-200 rounded" required=""
-                                            name="phoneNumber" value="" /><button type="button" class="p-2 text-xl font-bold rounded-xl mt-6 
-            text-gray-200 bg-gray-400" disabled="">BOOK NOW</button>
+                            <span className="mx-4 text-gray-500">to</span>
+                            <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                {/* ... (path for the calendar icon) */}
+                            </svg>
+                            <div className="react-datepicker-wrapper">
+                                <input type='date'
+                                    placeholderText="Select a date"
+                                    {...register("endDate")}
+                                />
+                            </div>
+                        </div>
+                        <label htmlFor="bookingType">Booking Type:</label>
+                        <select id="bookingType" name="bookingType" className="border-2 border-gray-200 rounded" required="">
+                            <option disabled="" selected="">Select booking type</option>
+                            <option value="SUIT" {...register("bookingType")}>Suit</option>
+                            <option value="ROOM" {...register("bookingType")}>ROOM</option>
+                        </select>
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" id="name" placeholder="Name" {...register("name")} className="border-2 border-gray-200 rounded" required="" name="name" />
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" placeholder="Email" className="border-2 border-gray-200 rounded" required="" name="email" {...register("email")} />
+                        <label htmlFor="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber" placeholder="Phone Number" className="border-2 border-gray-200 rounded" required="" name="phoneNumber" {...register("phone")} />
+                        <Link to="/cart" > <button type="submit" className="px-20 py-2 text-xl font-bold rounded-xl mt-6 text-gray-200 bg-green-800 hover:bg-gray-600" disabled="">
+                            BOOK NOW
+                        </button></Link>
                     </form>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
