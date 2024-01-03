@@ -52,10 +52,10 @@ export default function Home() {
                                     THE HAWELI RESORT
                                 </h2> */}
                                 <div className="flex flex-col   sm:gap-2 sm:flex-row w-full justify-center">
-                                    <button className="z-10 w-[180px] p-2 border border-gray-500 bg-green-800 rounded-xl font-bold text-xl mt-4 hover:bg-yellow-400">
+                                    <button className="z-10 w-[180px] p-2 border border-gray-500 bg-yellow-300 rounded-xl font-bold text-xl mt-4 hover:bg-yellow-400">
                                         <Link to="/bookingcomp">Book Room</Link>
                                     </button>
-                                    <button className="z-10 w-[180px] p-2 border border-gray-500 bg-green-800 rounded-xl font-bold text-xl mt-2 sm:mt-4 hover:bg-yellow-400">
+                                    <button className="z-10 w-[180px] p-2 border border-gray-500 bg-yellow-300 rounded-xl font-bold text-xl mt-2 sm:mt-4 hover:bg-yellow-400">
                                         <Link to="/contact">Book Resort</Link>
                                     </button>
                                 </div>
