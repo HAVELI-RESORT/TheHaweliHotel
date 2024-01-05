@@ -13,13 +13,14 @@ const newPayment = async (req, res) => {
     try {
         const name = "avinash";
         const number = "9102524714"
-        const amount = 10000;
+        // const total = req.body.amount * 100000; 
+        // console.log(total);
         const data = {
             merchantId: "PGTESTPAYUAT",
             merchantTransactionId: generateTransactionId(),
             merchantUserId: "MU933037302229373",
             name: name,
-            amount: amount * 100,
+            amount: req.body.amount ,
             redirectUrl: `https://www.google.com`,
             redirectMode: 'POST',
             mobileNumber: number,

@@ -13,7 +13,7 @@ import RightArrowIcon from "../assets/img/rightArrow.svg";
 
 const variants = {
   expanded: { width: "20%" },
-  nonexpanded: { width: "6%" },
+  nonexpanded: { width: "7%" },
 };
 
 function AdminNavbar() {
@@ -24,7 +24,7 @@ function AdminNavbar() {
       animate={isExpanded ? "expanded" : "nonexpanded"}
       variants={variants}
       className={
-        "py-10 h-screen flex flex-col border border-r-1 bg-yellow-600 relative" +
+        "py-10  flex flex-col border border-r-1 bg-yellow-600 relative" +
         (isExpanded ? " px-10" : " px-6")
       }
     >

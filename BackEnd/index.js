@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(
     cors({
         origin: "*",
+        
     })
 );
 require('./config/database').connect();
@@ -18,6 +19,9 @@ const user = require('./routes/user');
 app.use('/api/v1', user);
 const phonepeRoute = require('./routes/phonepeRoute')
 app.use("/api", phonepeRoute);
+app.get("/",(req,res)=>{
+    res.json("hello")
+})
 
 app.listen(PORT, () => {
     console.log(`Server is Started ${PORT}`);

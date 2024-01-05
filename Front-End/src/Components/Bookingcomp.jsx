@@ -5,15 +5,17 @@ import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import "react-datepicker/dist/react-datepicker.css";
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 export default function Bookingcomp() {
 
     const [selectedDate, setSelectedDate] = useState(null);
     const [selectedDate1, setSelectedDate1] = useState(null);
     const { register, handleSubmit } = useForm();
+    const navigate = useNavigate();
     const createEmployee = async (data) => {
 
         const savedUserResponse = await fetch(
-            `http://127.0.0.1:4000/api/v1/createUser`,
+            `http://localhost:4000/api/v1/createUser`,
             {
                 method: "POST",
                 headers: {
@@ -22,6 +24,7 @@ export default function Bookingcomp() {
                 body: JSON.stringify({ ...data }),
             }
         );
+        navigate("/cart");
         console.log("FORM RESPONSE......", savedUserResponse);
     };
     const handleDateChange = (date) => {
@@ -31,27 +34,6 @@ export default function Bookingcomp() {
         setSelectedDate1(date);
     };
 
-    const data = {
-        name: 'Waleed',
-        amount: 1,
-        number: '7498608775',
-        MUID: "MUID" + Date.now(),
-        transactionId: 'T' + Date.now(),
-    }
-
-    const handlePayment = (e) => {
-        e.preventDefault();
-        // setLoading2(true);
-        axios.post('http://localhost:4000/api/payment', { ...data }).then(res => {
-            setTimeout(() => {
-                // setLoading2(false);
-            }, 1500);
-        })
-            .catch(error => {
-                // setLoading2(false)
-                console.error(error);
-            });
-    }
 
     return (
         <div class="w-full h-full bg-yellow-100 bg-opacity-50">
@@ -140,9 +122,9 @@ export default function Bookingcomp() {
                     </div>
                 </div>
                 <div className="flex flex-row items-center justify-center w-full h-full">
-                    {/*onSubmit={handleSubmit(createEmployee)}  */}
+                    {/*  */}
                     {/* onSubmit={handlePayment} */}
-                    <form className="flex flex-col justify-center w-full h-full gap-3 p-10 bg-yellow-200">
+                    <form onSubmit={handleSubmit(createEmployee)} className="flex flex-col justify-center w-full h-full gap-3 p-10 bg-yellow-200">
                         <p className="m-2 text-3xl font-bold text-center">Book Your Visit</p>
                         <div className="flex flex-col items-center justify-center gap-2 sm:flex-row">
                             <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -177,9 +159,11 @@ export default function Bookingcomp() {
                         <input type="email" id="email" placeholder="Email" className="border-2 border-gray-200 rounded" required="" name="email" {...register("email")} />
                         <label htmlFor="phoneNumber">Phone Number:</label>
                         <input type="tel" id="phoneNumber" placeholder="Phone Number" className="border-2 border-gray-200 rounded" required="" name="phoneNumber" {...register("phone")} />
-                        <Link to="/cart" > <button type="submit" className="px-20 py-2 text-xl font-bold rounded-xl mt-6 text-gray-200 bg-green-800 hover:bg-gray-600" disabled="">
+                        {/* <Link to="/cart" >  */}
+                        <button type="submit" className="px-20 py-2 text-xl font-bold rounded-xl mt-6 text-gray-200 bg-green-800 hover:bg-gray-600" disabled="">
                             BOOK NOW
-                        </button></Link>
+                        </button>
+                        {/* </Link> */}
                     </form>
                 </div>
             </div>

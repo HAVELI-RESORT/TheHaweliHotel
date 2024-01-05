@@ -93,8 +93,6 @@ function AdminDashboard() {
                             {person.email}
                           </div>
                         </td>
-
-                        
                         <td className="px-12 py-4 whitespace-nowrap">
                           <div className="text-sm text-gray-900 dark:text-white">
                             {person.paymentMode}
@@ -112,5 +110,6 @@ function AdminDashboard() {
         </>
     )
 }
+
 
 export default AdminDashboard;
